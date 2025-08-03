@@ -24,7 +24,8 @@ body {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--pritwer);
-  background-color: rgba(230, 203, 203, 0.9);
+  background-color: transparent;
+  backdrop-filter: blur(10px);
   top: 0;
   left: 0;
   right: 0;
@@ -140,18 +141,21 @@ main {
 /*BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB*/
 
 .about,
-.menu {
+.menu,
+.contact {
   padding: 8rem 7% 1.4rem;
 }
 .about h2,
-.menu h2 {
+.menu h2,
+.contact h2 {
   font-size: 2.5rem;
   color: #fff;
   text-align: center;
   margin-bottom: 2rem;
 }
 .about h2 span,
-.menu h2 span {
+.menu h2 span,
+.contact h2 span {
   color: #d291bc;
 }
 .about .aboutall {
@@ -195,4 +199,68 @@ main {
 .menu .menuall .menu-item img {
   width: 100%;
   border-radius: 0.4rem;
+}
+/*DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD*/
+.pembungkus {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+.contact p {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: auto;
+  max-width: 45rem;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+.contact .pembungkus .map {
+  width: 50rem;
+  padding-top: 2rem;
+}
+.contact .contact-form {
+  display: flex;
+  background-color: #d291bc;
+  margin-top: 2rem;
+}
+.contact .contact-form .map {
+  object-fit: cover;
+  flex: 1 1 40rem;
+  width: 100%;
+}
+.contact .contact-form form {
+  flex: 1 1 40rem;
+  text-align: center;
+}
+.contact .contact-form form .input {
+  display: flex;
+  padding-left: 2rem;
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+  align-items: center;
+  background-color: var(--back);
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.contact .contact-form form .input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 1.6rem;
+  font-size: 1rem;
+  color: #312c2c;
+}
+.contact-form form button {
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 1.3rem;
+  border: 1px solid #ffffff;
+  padding: 0.5rem 1rem;
+  color: #000000;
+  background-color: var(--back);
+  cursor: pointer;
+  border-radius: 1rem;
 }
