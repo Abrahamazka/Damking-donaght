@@ -5,6 +5,7 @@
   --pink: #ffc0cb;
 }
 * {
+  margin: 0;
   padding: 0;
   border: none;
   scroll-behavior: smooth;
@@ -86,12 +87,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-.home .home-text {
-  position: absolute;
-  color: #fdfdfd;
-  padding: 1.4rem 8%;
-  max-width: 60rem;
-}
+
 .home::after {
   content: "";
   display: block;
@@ -263,4 +259,45 @@ main {
   background-color: var(--back);
   cursor: pointer;
   border-radius: 1rem;
+}
+footer {
+  background-color: var(--pink);
+  padding: 0.5rem;
+  text-align: center;
+  color: #fff;
+  font-size: 1.1rem;
+  margin-top: 4rem;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 0.7rem;
+}
+footer a:hover {
+  color: var(--back);
+}
+/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 1.1rem 5%;
+  }
+  .nav .nav-judul {
+    font-size: 1.8rem;
+  }
+  .nav .nav-nav a {
+    font-size: 1rem;
+    margin: 0 0.5rem;
+  }
+  .home .home-text h1 {
+    font-size: 2.5em;
+  }
+  .home .home-text p {
+    font-size: 1rem;
+    margin-top: -1.5rem;
+  }
+  .about .aboutall {
+    flex-direction: column;
+    align-items: center;
+  }
 }
