@@ -161,12 +161,13 @@ main {
   flex: 1 1 45rem;
 }
 .about .aboutall .about-img img {
-  width: 100%;
+  width: 90%;
 }
 .about .aboutall .about-text {
   color: #fff9f9;
   flex: 1 1 35rem;
   padding: 0 1.8rem;
+  margin-left: -6rem;
 }
 .about .aboutall .about-text h3 {
   font-size: 1.8rem;
@@ -174,6 +175,7 @@ main {
 }
 .about .aboutall .about-text p {
   margin-bottom: 0.8rem;
+
   font-size: 1.4rem;
   font-weight: 300;
   line-height: 1.6;
